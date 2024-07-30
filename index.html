@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>採買達人 Smart Shopper</title>        
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-        <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.1/dist/phaser.min.js"></script>
-             
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <title>採買達人 Smart Shopper</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.1/dist/phaser.min.js"></script>
+
+    <style>
         * {
             padding: 0;
             margin: 0;
@@ -18,33 +18,75 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
-        </style>
-    </head>
-    <body>
-        <div id="content"></div>
-        <script src="js/start.js"></script>
-        <script src="js/restart.js"></script>
-        <script src="js/scene1.js"></script>
-        <script src="js/success12.js"></script> 
-        <script src="js/scene2.js"></script>
-        <script src="js/success23.js"></script> 
-        <script src="js/scene3.js"></script>
-        <script src="js/success34.js"></script> 
-        <script src="js/scene4.js"></script>
-        <script src="js/success45.js"></script> 
-        <script src="js/scene5.js"></script>
-        <script src="js/success56.js"></script> 
-        <script src="js/scene6.js"></script>
-        <script src="js/success67.js"></script> 
-        <script src="js/scene7.js"></script>
-        <script src="js/success78.js"></script> 
-        <script src="js/scene8.js"></script>
-        <script src="js/success89.js"></script> 
-        <script src="js/scene9.js"></script>
-        <script src="js/success910.js"></script> 
-        <script src="js/scene10.js"></script>
-        <script src="js/end.js"></script> 
-        <script src="js/config.js"></script> 
-    </body>
+
+        #content {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        #button {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out; /* 添加過渡效果 */
+        }
+
+        #button:hover {
+            transform: scale(1.1); /* 略為放大 */
+        }
+
+        #annotateImage {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 60%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <img id="button" src="assets/button.png" alt="Button" width="60">
+    <img id="annotateImage" src="assets/annotate.png" alt="Annotate">
+
+    <script src="js/start.js"></script>
+    <script src="js/restart.js"></script>
+    <script src="js/scene1.js"></script>
+    <script src="js/success12.js"></script> 
+    <script src="js/scene2.js"></script>
+    <script src="js/success23.js"></script> 
+    <script src="js/scene3.js"></script>
+    <script src="js/success34.js"></script> 
+    <script src="js/scene4.js"></script>
+    <script src="js/success45.js"></script> 
+    <script src="js/scene5.js"></script>
+    <script src="js/success56.js"></script> 
+    <script src="js/scene6.js"></script>
+    <script src="js/success67.js"></script> 
+    <script src="js/scene7.js"></script>
+    <script src="js/success78.js"></script> 
+    <script src="js/scene8.js"></script>
+    <script src="js/success89.js"></script> 
+    <script src="js/scene9.js"></script>
+    <script src="js/success910.js"></script> 
+    <script src="js/scene10.js"></script>
+    <script src="js/end.js"></script> 
+    <script src="js/config.js"></script> 
+
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            const annotateImage = document.getElementById('annotateImage');
+            if (annotateImage.style.display === 'none' || annotateImage.style.display === '') {
+                annotateImage.style.display = 'block';
+            } else {
+                annotateImage.style.display = 'none';
+            }
+        });
+    </script>
+</body>
 </html>

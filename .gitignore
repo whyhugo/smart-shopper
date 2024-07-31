@@ -1,0 +1,42 @@
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build output
+dist/
+build/
+
+# Ignore environment variables file
+.env
+.ini
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignore coverage directory
+coverage/
+
+# Ignore dependency directories
+node_modules/
+jspm_packages/
+
+# Ignore test output
+/test-results
+
+# Ignore specific files
+*.tmp
+*.swp
+
+# Specific files
+採買達人-whyhugo.ppsx
+採買達人-whyhugo.pptx
+採買達人-whyhugo_一分鐘影片.mp4
+採買達人-whyhugo_遊戲縮圖.png

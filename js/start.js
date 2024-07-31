@@ -144,7 +144,7 @@ var WorldSceneStart = new Phaser.Class({
 
         this.addLevelText();
 
-        this.time.delayedCall(8000, function() {
+        this.time.delayedCall(10000, function() {
             this.scene.start('BootScene1');  // switch to Scene2
         }, [], this);
     },
@@ -163,10 +163,10 @@ var WorldSceneStart = new Phaser.Class({
         // create a graphics object for the semi-transparent background
         var graphics = this.add.graphics();
         graphics.fillStyle(0xFFFFFF, 0.15); // white with 50% opacity
-        graphics.fillRect(0, 0, this.cameras.main.width, 60); // position and size of the background
+        graphics.fillRect(0, 0, this.cameras.main.width, 70); // position and size of the background
 
         // create the text
-        var levelText = this.add.text(this.cameras.main.width / 2, 30, '請依題目要求移動角色蒐集對應的食物\n千萬別蒐集錯了\n你將成為採買達人，遊戲即將開始', {
+        var levelText = this.add.text(this.cameras.main.width / 2, 35, '請依題目要求使用上下左右鍵移動角色\n蒐集對應的食物；千萬別蒐集錯了\n你將成為採買達人，請等待遊戲即將開始', {
             font: '14px Arial',
             fill: '#fff'
         });

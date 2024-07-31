@@ -439,7 +439,7 @@ var WorldScene6 = new Phaser.Class({
         graphics.fillRect(0, 0, this.cameras.main.width, 60); // position and size of the background
 
         // create the text
-        var levelText = this.add.text(this.cameras.main.width / 2, 30, '第六關\n蒐集 1 個水果\n「一個孩子生的好，衣服穿了七八套，\n頭上戴著紅纓帽，身上裝著珍珠寶」', {
+        var levelText = this.add.text(this.cameras.main.width / 2, 30, '第六關\n蒐集 1 個蔬果\n「一個孩子生的好，衣服穿了七八套，\n頭上戴著紅纓帽，身上裝著珍珠寶」', {
             font: '12px Arial',
             fill: '#fff'
         });

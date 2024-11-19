@@ -44,4 +44,4 @@ RPG 遊戲的角色透過鍵盤上下左右鍵操控，依靠玩家的手眼協�
 採用像素風格設計整體遊戲畫面元素與角色。遊戲中的各個元素皆取自於 [itch.io](https://itch.io/) 2D 遊戲素材庫，再透過平面繪圖軟體重新調整成程式以及遊戲設計上的內容需求。
 
 ## 獲獎
-2024 第二屆資策會數位教育研究所樂齡盃遊戲設計學生組 最佳團隊獎（2024 IIIEDU Senior Cup Student Game Design Category – Best Team Award）
+2024 [第二屆資策會數位教育研究所樂齡盃遊戲設計學生組](https://www.gyrigym.com/SeniorCupActivityInfo2024) 最佳團隊獎（2024 IIIEDU Senior Cup Student Game Design Category – Best Team Award）
